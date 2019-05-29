@@ -1,0 +1,13 @@
+0. 生成图像名和类型列表文件：
+	运行GenerateTrainData.m生成TrainData.txt文件，图片类型从0开始递增；
+1. 生成数据库文件：
+	E:/caffetest/bin/convert_imageset.exe --shuffle --resize_height=32 --resize_width=32 --backend=lmdb E:/DataSet/ModelTraining/LED/samples/numbercombine E:/caffetest/TrainData.txt E:/caffetestfinal/img_train_lmdb
+2. 生成均值文件：
+	E:/caffetest/bin/compute_image_mean.exe --backend=lmdb E:/caffetest/img_train_lmdb E:/caffetest/mean.binaryproto
+3. 开始训练过程：
+	E:/caffetest/bin/caffe.exe train --solver=E:/caffetest/number_lenet_solver.prototxt 
+4. 测试模型：
+	E:/caffetest/bin/caffe.exe test -model=E:/caffetest/number_lenet_train_test.prototxt -weights=E:/caffetest/number_lenet_iter_10000.caffemodel
+5. 在上一次训练结果的基础上继续训练：
+	E:/caffetest/bin/caffe.exe train --solver=E:/caffetestfinal/number_cifar_quick_solver.prototxt --snapshot=E:/caffetestfinal/number_lenet_iter_65000.solverstate
+        E:/caffetest/bin/caffe.exe train --solver=E:/caffetestfinal/number_cifar_quick_solver.prototxt -weights=E:/caffetestfinal/number_cifar_quick.caffemodel
