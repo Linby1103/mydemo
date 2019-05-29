@@ -1,0 +1,19 @@
+﻿生成启动时间为 2019/1/15 14:46:56。
+     1>项目“D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\MYprojectdemo\MYprojectdemo.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\Debug\MYprojectdemo001.exe" /INCREMENTAL /NOLOGO opencv_objdetect249d.lib opencv_ts249d.lib opencv_video249d.lib opencv_nonfree249d.lib opencv_ocl249d.lib opencv_photo249d.lib opencv_stitching249d.lib opencv_superres249d.lib opencv_videostab249d.lib opencv_calib3d249d.lib opencv_contrib249d.lib opencv_core249d.lib opencv_features2d249d.lib opencv_flann249d.lib opencv_gpu249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib opencv_legacy249d.lib opencv_ml249d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\Debug\MYprojectdemo001.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\Debug\MYprojectdemo001.lib" /MACHINE:X86 "Debug\k-means.obj"
+         Debug\main.obj
+         Debug\Hist.obj
+         Debug\Image.obj
+         Debug\ImageInfo.obj
+         Debug\mainx.obj
+         Debug\opsFile.obj
+         Debug\tmpmatch.obj
+         Debug\toushi.obj
+         LINK : 没有找到 D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\Debug\MYprojectdemo001.exe 或上一个增量链接没有生成它；正在执行完全链接
+         MYprojectdemo.vcxproj -> D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\Debug\MYprojectdemo001.exe
+     1>已完成生成项目“D:\原笔记本数据备份\F盘\work\mydemo\MYprojectdemo\MYprojectdemo\MYprojectdemo.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.55
